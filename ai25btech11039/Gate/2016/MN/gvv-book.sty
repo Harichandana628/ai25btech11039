@@ -7,11 +7,7 @@
 %\usepackage{graphicx}
 %\usepackage{amssymb}
 %\usepackage{relsize}
-\makeatletter
-\@ifpackageloaded{amsmath}{}{%
-  \RequirePackage{amsmath}% no options here
-}
-\makeatother
+\usepackage[cmex10]{amsmath}
 \usepackage{siunitx}
 %\usepackage{amsthm}
 %\interdisplaylinepenalty=2500
@@ -19,6 +15,7 @@
 %\usepackage{txfonts}
 %\restoresymbol{TXF}{iint}
 %\usepackage{wasysym}
+\usepackage{amsthm}
 %\usepackage{iithtlc}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
@@ -76,6 +73,7 @@
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 
-
-
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
 
